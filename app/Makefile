@@ -76,8 +76,14 @@ ifndef ICONNAME
 $(error ICONNAME is not set)
 endif
 
+ifeq ($(TARGET_NAME),TARGET_NANOS)
+	APP_STACK_MIN_SIZE := 1600
+else ifeq ($(TARGET_NAME),TARGET_NANOX)
+# the previous value (5000) was too high and caused the app to crash, i reduced it to 3400 and it seems to work
+	APP_STACK_MIN_SIZE :=  3400 
+endif
+
 include $(CURDIR)/../deps/ledger-zxlib/makefiles/Makefile.platform
-DEFINES += HAVE_HASH HAVE_BLAKE2 HAVE_SHA256 HAVE_SHA512
 CFLAGS += -I$(MY_DIR)/../deps/tinycbor/src
 APP_SOURCE_PATH += $(MY_DIR)/../deps/tinycbor-ledger
 APP_SOURCE_PATH += $(MY_DIR)/../deps/jsmn/src
