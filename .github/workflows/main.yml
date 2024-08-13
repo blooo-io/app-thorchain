@@ -28,7 +28,6 @@ jobs:
       - name: Install deps
         run: |
           sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
-          pip install conan
           make deps
       - run: make cpp_test
 
