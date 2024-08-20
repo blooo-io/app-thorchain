@@ -1,0 +1,9 @@
+filecoin:                                                                                                                                                                                    ─╯
+  ed1974ea83433eba7b2d95c5dcd9ac33cb847913 deps/BLAKE2
+  b46b4b516650c08dfe913054dc7535dd52e2503a deps/ledger-secure-sdk
+  271f40ce03219eac8396a309ce9704977cf59caa deps/ledger-zxlib
+working app-thorchain:
+  df81cb767d464995327218f0fb92eaa2dd3b4db3 ../deps/ledger-zxlib (v14.0.3-273-gdf81cb7)
+  0532bf20fbbb11dd08dada62060f8337097b6078 ../deps/nanos-secure-sdk (nanos-161-45-g0532bf2)
+  86e20d8dbcee181e11bc2ad7ac3f638eb7dc7b08 ../deps/nanosplus-secure-sdk (v15.0.0~14)
+  86e20d8dbcee181e11bc2ad7ac3f638eb7dc7b08 ../deps/nanox-secure-sdk (v15.0.0~14)
