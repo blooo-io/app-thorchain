@@ -92,3 +92,29 @@ export const example_tx_str_MsgDeposit = {
   ],
   "sequence": "6"
 };
+
+export const example_tx_str_MsgDeposit_token_2 = {
+    "account_number": "588",
+    "chain_id": "thorchain",
+    "fee": {
+        "amount": [],
+        "gas": "10000000"
+    },
+    "memo": "",
+    "msgs": [
+        {
+            "type": "thorchain/MsgDeposit",
+            "value": {
+                "coins": [
+                    {
+                        "amount": "330000000",
+                        "asset": "ETH.ETH"
+                    }
+                ],
+                "memo": "SWAP:BNB.BNB:tbnb1qk2m905ypazwfau9cn0qnr4c4yxz63v9u9md20:",
+                "signer": "tthor1c648xgpter9xffhmcqvs7lzd7hxh0prgv5t5gp"
+            }
+        }
+    ],
+    "sequence": "6"
+};
